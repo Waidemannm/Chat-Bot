@@ -1,0 +1,1622 @@
+{
+  "intents": [
+    {
+      "intent": "agradecimento",
+      "examples": [
+        {
+          "text": "legal, valeu!"
+        },
+        {
+          "text": "Muito obrigado"
+        },
+        {
+          "text": "obrigado"
+        },
+        {
+          "text": "Ótimo"
+        },
+        {
+          "text": "que bom!"
+        },
+        {
+          "text": "tmj"
+        },
+        {
+          "text": "valeu!"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "cadastro",
+      "examples": [
+        {
+          "text": "cadastrar"
+        },
+        {
+          "text": "cadastro"
+        },
+        {
+          "text": "gostaria de me cadastrar"
+        },
+        {
+          "text": "ok"
+        },
+        {
+          "text": "posso me cadastrar?"
+        },
+        {
+          "text": "Qual prazo para finalizar meu cadastro?"
+        },
+        {
+          "text": "Quero me cadastrar"
+        },
+        {
+          "text": "quero me cadastrar para o atendimento"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "cancelar_consulta",
+      "examples": [
+        {
+          "text": "Como cancelar a consulta?"
+        },
+        {
+          "text": "Como faço para cancelar minha consulta?"
+        },
+        {
+          "text": "Como faço para poder cancelar minha consulta?"
+        },
+        {
+          "text": "Gostaria de cancelar"
+        },
+        {
+          "text": "Posso cancelar meu cadastro?"
+        },
+        {
+          "text": "posso cancelar minha consulta?"
+        },
+        {
+          "text": "Quero cancelar a consulta"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "consultas",
+      "examples": [
+        {
+          "text": "datas disponíveis para consulta"
+        },
+        {
+          "text": "Datas e horário de consulta"
+        },
+        {
+          "text": "Essas as datas para consulta?"
+        },
+        {
+          "text": "posso marcar?"
+        },
+        {
+          "text": "Posso marcar em qualquer uma dessas datas?"
+        },
+        {
+          "text": "quais são as datas de consulta"
+        },
+        {
+          "text": "quando posso marcar?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "duvidas_frequentes",
+      "examples": [
+        {
+          "text": "Algum documento é obrigatório?"
+        },
+        {
+          "text": "Como faço para agendar uma consulta?"
+        },
+        {
+          "text": "Quais documentos preciso levar?"
+        },
+        {
+          "text": "Quais documentos preciso para me cadastrar?"
+        },
+        {
+          "text": "Quais especialidades estão disponíveis?"
+        },
+        {
+          "text": "Qual o horário de funcionamento da clínica?"
+        },
+        {
+          "text": "Qual telefone para contato?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "localização",
+      "examples": [
+        {
+          "text": "Como posso chegar?"
+        },
+        {
+          "text": "Como posso chegar com transporte público?"
+        },
+        {
+          "text": "Onde realizo o procedimento?"
+        },
+        {
+          "text": "Quais são os locais de consulta?"
+        },
+        {
+          "text": "Qual o endereço?"
+        },
+        {
+          "text": "Qual o horário de funcionamento da unidade?"
+        },
+        {
+          "text": "Tem estacionamento no local da consulta?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "plano_de_saude",
+      "examples": [
+        {
+          "text": "Aceita meu concênio?"
+        },
+        {
+          "text": "Como agendar uma consulta usando meu plano?"
+        },
+        {
+          "text": "Preciso ter um plano especifico?"
+        },
+        {
+          "text": "Preciso ter um plano específico?"
+        },
+        {
+          "text": "Quais planos de saude são aceitos?"
+        },
+        {
+          "text": "Quais planos de saúde são aceitos?"
+        },
+        {
+          "text": "Quais planos de saúde vocês aceitam?\""
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "cadastro",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "altura",
+          "patterns": [
+            "(\\d{1,3}(?:,|\\.)\\d{1,2}\\s*(?:metros?|m)|(?:\\d+\\s*)?cent[ií]metros?|cms?)"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "cpf",
+          "patterns": [
+            "^\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}$"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "data_de_nascimento",
+          "patterns": [
+            "\\b(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/(19\\d{2}|20\\d{2})\\b"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "escolaridade",
+          "patterns": [
+            "(ensino\\s+(fundamental|médio|superior)|superior\\s+completo|gradua[çc][aã]o|p[oó]s-gradua[çc][aã]o|mestrado|doutorado|analfabeto|prim[aá]rio|gin[aá]sio|segundo\\s+grau|faculdade)"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "estado_civil",
+          "patterns": [
+            "^(Solteiro(a)?|Casado(a)?|Viúvo(a)?|Divorciado(a)?|Separado(a)?|União Estável)$"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "nome_completo",
+          "patterns": [
+            "\\b([A-Za-zÀ-ÿ']+(?:\\s+[A-Za-zÀ-ÿ']+)*)\\b"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "numero_celular",
+          "patterns": [
+            "\\b(?:(?:0?\\d{2})|[2-9]\\d{1})[ -]?9?\\d{4}[ -]?\\d{4}\\b"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "peso",
+          "patterns": [
+            "(\\d+(?:,\\d{1,2})?(?:\\.\\d{1,2})?)\\s*(kg|quilogramas?|lbs|libras?)"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "rg",
+          "patterns": [
+            "^(\\d{1,2}\\.\\d{3}\\.\\d{3}-\\d{1})$"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "sexo",
+          "patterns": [
+            "(?i)(masculino|feminino|m|f|masc|fem)"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "telefone",
+          "patterns": []
+        },
+        {
+          "type": "patterns",
+          "value": "tipo_sanguineo",
+          "patterns": [
+            "\\b(A[+-]|B[+-]|AB[+-]|O[+-])\\b"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "datas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "02/05/2025 – sexta-feira",
+          "synonyms": [
+            "02/05",
+            "02 sexta",
+            "sexta",
+            "sexta 02",
+            "sexta feira",
+            "sexta-feira"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "06/05/2025 – terça-feira",
+          "synonyms": [
+            "06",
+            "06/05",
+            "06 terca",
+            "06 terça",
+            "terca 06",
+            "terça 06"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "23/04/2025 – terça-feira",
+          "synonyms": [
+            "23",
+            "23/04",
+            "23 terca",
+            "23 terça",
+            "terca 23",
+            "terça 23"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "25/04/2025 – quinta-feira",
+          "synonyms": [
+            "25",
+            "25/04",
+            "25 quinta",
+            "25 quinta-feira",
+            "quinta 25",
+            "quinta-feira 25"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "29/04/2025 – segunda-feira",
+          "synonyms": [
+            "29/04",
+            "29 segunda",
+            "segnda-feira",
+            "segunda",
+            "segunda 29",
+            "segunda feira"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "descrição-plano",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Plano High",
+          "synonyms": [
+            "High",
+            "plano high"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Plano low",
+          "synonyms": [
+            "Low",
+            "plano low"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Plano Medium",
+          "synonyms": [
+            "medium",
+            "plano medium"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "plano_de_saude",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Amil",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Bradesco Saúde",
+          "synonyms": [
+            "Bradesco Saude",
+            "Bradesco Saúde"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Notre-Dame",
+          "synonyms": [
+            "Notre dame",
+            "Notre-dame"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Porto Seguro",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "São Cristovão Saúde",
+          "synonyms": [
+            "São Cristovao Saude"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sim-nao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "nao",
+          "synonyms": [
+            "não",
+            "nao pode",
+            "não pode",
+            "negativo",
+            "nem",
+            "sqn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "claro",
+            "de acordo",
+            "ok",
+            "pode",
+            "pode sim"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tipo_sanguineo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "A+",
+          "synonyms": [
+            "A+",
+            "A positivo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "A-",
+          "synonyms": [
+            "A-",
+            "A negativo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "AB+",
+          "synonyms": [
+            "AB+",
+            "AB positivo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "AB-",
+          "synonyms": [
+            "AB-",
+            "AB negativo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "B+",
+          "synonyms": [
+            "B+",
+            "B positivo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "B-",
+          "synonyms": [
+            "B-",
+            "B negativo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "O+",
+          "synonyms": [
+            "O+",
+            "O positivo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "O-",
+          "synonyms": [
+            "O-",
+            "O negativo"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "unidades",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Mauá",
+          "synonyms": [
+            "Maua",
+            "Mauá"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mooca",
+          "synonyms": [
+            "moca",
+            "mooca"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Paulista",
+          "synonyms": [
+            "Avenida Paulista",
+            "av paulista"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tatuapé",
+          "synonyms": [
+            "Tatuape",
+            "Tatuapé"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Como posso te ajudar?"
+              },
+              {
+                "text": "Olá! 👋 Eu sou o assistente virtual. Como posso te ajudar hoje?\""
+              },
+              {
+                "text": "Oii! Em que posso te ajudar hoje?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1745367762776",
+      "context": {
+        "email": "@cadastro:email"
+      },
+      "conditions": "@cadastro:email",
+      "event_name": "input",
+      "dialog_node": "handler_10_1745367762777"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1745367613861",
+      "context": {
+        "nome": "@cadastro:nome_completo"
+      },
+      "conditions": "@cadastro:nome_completo",
+      "event_name": "input",
+      "dialog_node": "handler_2_1745367613869"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1745367715214",
+      "context": {
+        "telefone": "@cadastro:telefone"
+      },
+      "conditions": "@cadastro:telefone",
+      "event_name": "input",
+      "dialog_node": "handler_2_1745367715215"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual seu email?"
+              },
+              {
+                "text": "Me informe seu email?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "slot_5_1745367762776",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1745367762777",
+      "previous_sibling": "handler_10_1745367762777"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Me informe a descrição do seu plano de saúde (Plano High, Plano Medium, Plano Low):"
+              },
+              {
+                "text": "Me informe o nível do seu convênio (Plano High, Plano Medium, Plano Low):"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "slot_6_1745442466138",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1745442466149",
+      "previous_sibling": "handler_5_1745442466149"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Me informe qual seu nome!"
+              },
+              {
+                "text": "Qual o seu nome?"
+              },
+              {
+                "text": "Me diga seu nome!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_5_1745443611859",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1745443611866",
+      "previous_sibling": "handler_6_1745443611866"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1745442466138",
+      "context": {
+        "plano_escolhido": "@plano_de_saude"
+      },
+      "conditions": "@plano_de_saude",
+      "event_name": "input",
+      "dialog_node": "handler_5_1745442466149"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual seu telefone?"
+              },
+              {
+                "text": "Me diga seu telefone!"
+              },
+              {
+                "text": "Me informe seu telefone!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "slot_7_1745443261688",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1745443261699",
+      "previous_sibling": "handler_8_1745443261699"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1745443611859",
+      "context": {
+        "nome_completo": "@cadastro:nome_completo"
+      },
+      "conditions": "@cadastro:nome_completo",
+      "event_name": "input",
+      "dialog_node": "handler_6_1745443611866"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual seu nome?"
+              },
+              {
+                "text": "Me informe seu nome?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "slot_1_1745367613861",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1745367613869",
+      "previous_sibling": "handler_2_1745367613869"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual seu telefone?"
+              },
+              {
+                "text": "Me informe seu telefone?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "slot_5_1745367715214",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1745367715215",
+      "previous_sibling": "handler_2_1745367715215"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1745443261688",
+      "context": {
+        "telefone": "@cadastro:telefone"
+      },
+      "conditions": "@cadastro:telefone",
+      "event_name": "input",
+      "dialog_node": "handler_8_1745443261699"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que pena. Posso ajudar em algo mais?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1745361370555",
+      "conditions": "@sim-nao:nao",
+      "dialog_node": "node_10_1745442133340",
+      "previous_sibling": "node_4_1745442112855"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Me informe seu email!"
+              },
+              {
+                "text": "Qual seu emal?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_2_1745442996107",
+      "conditions": "@cadastro:email || @sim-nao:sim",
+      "dialog_node": "node_10_1745443438288"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O laboratório esta localizada nesse endereço: \"Av. Paulista 1106\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1745372473466",
+      "conditions": "@unidades:Paulista",
+      "dialog_node": "node_1_1745373052460"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O laboratório está localizado nesse endereço \"Rua Tuiuti 129\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1745372473466",
+      "conditions": "@unidades:Tatuapé",
+      "dialog_node": "node_1_1745373343203",
+      "previous_sibling": "node_3_1745373265009"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Legal, parece que eu tenho algumas opções de datas para o $plano_escolhido, quer que mostre?"
+              },
+              {
+                "text": "Temos alguns horários para o $plano_escolhido, você que ver?"
+              },
+              {
+                "text": "Tenho algumas opções de datas para o $plano_escolhido, você que ver?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_3_1745374837852",
+      "conditions": "@descrição-plano || @sim-nao:sim",
+      "dialog_node": "node_1_1745375686688",
+      "previous_sibling": "slot_6_1745442466138"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Òtimo! Sua consulta está marcada para essa data \"23/04/2025 – terça-feira\""
+              },
+              {
+                "text": "Legal, marcado para essa data \"23/04/2025 – terça-feira\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_8_1745377666390",
+      "conditions": "@datas:(23/04/2025 – terça-feira)",
+      "dialog_node": "node_1_1745378118028",
+      "previous_sibling": "node_4_1745378070709"
+    },
+    {
+      "type": "standard",
+      "title": "Agradecimento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que bom que gostou, não se esqueça da data!"
+              },
+              {
+                "text": "Muito obrigado, volte sempre!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1745378118028",
+      "conditions": "#agradecimento",
+      "dialog_node": "node_1_1745378494075"
+    },
+    {
+      "type": "standard",
+      "title": "Agradecimento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que bom que gostou, não se esqueça da data!"
+              },
+              {
+                "text": "Muito obrigado, volte sempre!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_5_1745377826413",
+      "conditions": "#agradecimento",
+      "dialog_node": "node_2_1745378488298"
+    },
+    {
+      "type": "standard",
+      "title": "Agradecimento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que bom que gostou, não se esqueça da data!"
+              },
+              {
+                "text": "Muito obrigado, volte sempre!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_4_1745377876764",
+      "conditions": "#agradecimento",
+      "dialog_node": "node_2_1745378490580"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual seu telefone?"
+              },
+              {
+                "text": "Me informe seu telefone!"
+              },
+              {
+                "text": "Me diga seu telefone!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1745442112855",
+      "conditions": "@cadastro:nome_completo || @sim-nao:sim",
+      "dialog_node": "node_2_1745442996107",
+      "previous_sibling": "slot_5_1745443611859"
+    },
+    {
+      "type": "standard",
+      "title": "Locais do laboratório ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os nossos laboratórios estão localizados na:"
+              },
+              {
+                "text": "Avenida Paulista"
+              },
+              {
+                "text": "Mauá"
+              },
+              {
+                "text": "Mooca"
+              },
+              {
+                "text": "Tatuapé"
+              },
+              {
+                "text": "Me informe o laboratório mais próxima de você: "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#localização",
+      "dialog_node": "node_3_1745372473466",
+      "previous_sibling": "node_8_1745373795894"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O laboratório está localizada na \"Av. Barão de Mauá, 196\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1745372473466",
+      "conditions": "@unidades:Mauá",
+      "dialog_node": "node_3_1745373160009",
+      "previous_sibling": "node_1_1745373052460"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O laboratório está localizado nesse endereço \"Rua da Mooca 322\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1745372473466",
+      "conditions": "@unidades:Mooca",
+      "dialog_node": "node_3_1745373265009",
+      "previous_sibling": "node_3_1745373160009"
+    },
+    {
+      "type": "frame",
+      "title": "Nivel do plano",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Me informe a descrição do seu plano de saúde (Plano High, Plano Medium, Plano Low):"
+              },
+              {
+                "text": "Me informe o nível do seu convênio (Plano High, Plano Medium, Plano Low):"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_5_1745374684021",
+      "context": {
+        "plano_escolhido": "@plano.literal"
+      },
+      "conditions": "@plano_de_saude || @sim-nao:sim",
+      "dialog_node": "node_3_1745374837852"
+    },
+    {
+      "type": "standard",
+      "title": "Ok para mostrar opções de datas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "📅 Datas futuras realistas (dias úteis e próximos)"
+              },
+              {
+                "text": "23/04/2025 – terça-feira"
+              },
+              {
+                "text": "25/04/2025 – quinta-feira"
+              },
+              {
+                "text": "29/04/2025 – segunda-feira"
+              },
+              {
+                "text": "02/05/2025 – sexta-feira"
+              },
+              {
+                "text": "06/05/2025 – terça-feira"
+              },
+              {
+                "text": "Me informe a melhor data para você: "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1745375686688",
+      "conditions": "@sim-nao:sim",
+      "dialog_node": "node_3_1745376094501"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Òtimo! Sua consulta está marcada para essa data \"25/04/2025 – quinta-feira\""
+              },
+              {
+                "text": "Legal, marcado para essa data \"25/04/2025 – quinta-feira\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_8_1745377666390",
+      "conditions": "@datas:(25/04/2025 – quinta-feira)",
+      "dialog_node": "node_4_1745377876764",
+      "previous_sibling": "node_5_1745377826413"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Òtimo! Sua consulta está marcada para essa data \"06/05/2025 – terça-feira\""
+              },
+              {
+                "text": "Legal, marcado para essa data \"06/05/2025 – terça-feira\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_8_1745377666390",
+      "conditions": "@datas:(06/05/2025 – terça-feira)",
+      "dialog_node": "node_4_1745378070709",
+      "previous_sibling": "node_4_1745377876764"
+    },
+    {
+      "type": "standard",
+      "title": "Agradecimento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que bom que gostou, não se esqueça da data!"
+              },
+              {
+                "text": "Muito obrigado, volte sempre!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_4_1745378070709",
+      "conditions": "#agradecimento",
+      "dialog_node": "node_4_1745378492280"
+    },
+    {
+      "type": "frame",
+      "title": "Ok para cadastro",
+      "output": {
+        "context": {
+          "nome_completo": "@nome.literal"
+        },
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Me informe qual seu nome!"
+              },
+              {
+                "text": "Qual o seu nome?"
+              },
+              {
+                "text": "Me diga seu nome!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_8_1745361370555",
+      "conditions": "@sim-nao:sim",
+      "dialog_node": "node_4_1745442112855"
+    },
+    {
+      "type": "standard",
+      "title": "OK para perguntas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Me informe o seu plano de saúde: "
+              },
+              {
+                "text": "Qual o seu plano de saúde?"
+              },
+              {
+                "text": "Me diga seu plano de saúde?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_6_1745374265773",
+      "conditions": "@sim-nao:sim",
+      "dialog_node": "node_5_1745374684021"
+    },
+    {
+      "type": "standard",
+      "title": "Nao Ok para mostrar opções de datas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem então, caso mude de ideia estou aqui.\nMuito obrigado!"
+              },
+              {
+                "text": "Tá bom, qualquer dúvida retorne o contato.\nVolte sempre!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1745375686688",
+      "conditions": "@sim-nao:nao",
+      "dialog_node": "node_5_1745376392094",
+      "previous_sibling": "node_3_1745376094501"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Òtimo! Sua consulta está marcada para essa data \"29/04/2025 – segunda-feira\""
+              },
+              {
+                "text": "Legal, marcado para essa data \"29/04/2025 – segunda-feira\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_8_1745377666390",
+      "conditions": "@datas:(29/04/2025 – segunda-feira)",
+      "dialog_node": "node_5_1745377826413"
+    },
+    {
+      "type": "standard",
+      "title": "Plano de saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Legal, vou te ajudar nisso ok?"
+              },
+              {
+                "text": "Entendi, Vou te fazer uma pergunta ok?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#plano_de_saude",
+      "dialog_node": "node_6_1745374265773",
+      "previous_sibling": "node_3_1745372473466"
+    },
+    {
+      "type": "standard",
+      "title": "Agradecimento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que bom que gostou, não se esqueça da data!"
+              },
+              {
+                "text": "Muito obrigado, volte sempre!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_8_1745378154953",
+      "conditions": "#agradecimento",
+      "dialog_node": "node_6_1745378495755"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Me informe o numero do seu celular!"
+              },
+              {
+                "text": "Me diga o numero do seu telefone!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1745443438288",
+      "conditions": "@cadastro:numero_celular || @sim-nao:sim",
+      "dialog_node": "node_6_1745444726362"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Caso nenhuma das opções te atenda, ligue para o 0800-77-111"
+              },
+              {
+                "text": "Obrigado, volte sempre!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1745372473466",
+      "conditions": "@unidades != \"Mauá\" &&   @unidades != \"Paulista\" &&  @unidades != \"Mooca\" && @unidades != \"Tatuapé\"",
+      "dialog_node": "node_7_1745373465458",
+      "previous_sibling": "node_1_1745373343203"
+    },
+    {
+      "type": "standard",
+      "title": "Cadastro Para Consulta",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ótimo! Vamos fazer seu cadastro! Tudo bem?"
+              },
+              {
+                "text": "Legal, vamos começar o cadastro! ok?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#cadastro",
+      "dialog_node": "node_8_1745361370555",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Localização e qualquer localização",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_1_1745373052460"
+      },
+      "conditions": "#localização && @unidades",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1745373795894",
+      "previous_sibling": "node_8_1745361370555"
+    },
+    {
+      "type": "standard",
+      "title": "Consulta",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Me informe uma das datas acima, por favor "
+              },
+              {
+                "text": "Escolha uma das datas acima"
+              },
+              {
+                "text": "Me informe uma dessas datas: \n23/04/2025 – terça-feira\n\n25/04/2025 – quinta-feira\n\n29/04/2025 – segunda-feira\n\n02/05/2025 – sexta-feira\n\n06/05/2025 – terça-feira"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_3_1745376094501",
+      "conditions": "#consultas",
+      "dialog_node": "node_8_1745377666390",
+      "previous_sibling": "node_9_1745378925821"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Òtimo! Sua consulta está marcada para essa data \"02/05/2025 – sexta-feira\""
+              },
+              {
+                "text": "Legal, marcado para essa data \"02/05/2025 – sexta-feira\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_8_1745377666390",
+      "conditions": "@datas:(02/05/2025 – sexta-feira)",
+      "dialog_node": "node_8_1745378154953",
+      "previous_sibling": "node_1_1745378118028"
+    },
+    {
+      "type": "standard",
+      "title": "Nao Ok para perguntas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que pena, mas muito obrigado pelo contato!"
+              },
+              {
+                "text": "Tudo bem, muito obrigado!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_6_1745374265773",
+      "conditions": "@sim-nao:nao",
+      "dialog_node": "node_9_1745375202353",
+      "previous_sibling": "node_5_1745374684021"
+    },
+    {
+      "type": "standard",
+      "title": "Consultas e qualquer data",
+      "parent": "node_3_1745376094501",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_5_1745377826413"
+      },
+      "conditions": "#consultas && @datas",
+      "dialog_node": "node_9_1745378925821"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1745361370555",
+      "variable": "$nome",
+      "dialog_node": "slot_1_1745367613861",
+      "previous_sibling": "node_10_1745442133340"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1745361370555",
+      "variable": "$telefone",
+      "dialog_node": "slot_5_1745367715214",
+      "previous_sibling": "slot_1_1745367613861"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1745361370555",
+      "variable": "$email",
+      "dialog_node": "slot_5_1745367762776",
+      "previous_sibling": "slot_5_1745367715214"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1745442112855",
+      "variable": "$nome_completo",
+      "dialog_node": "slot_5_1745443611859"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1745374837852",
+      "variable": "$plano_escolhido",
+      "dialog_node": "slot_6_1745442466138"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1745442996107",
+      "variable": "$telefone",
+      "dialog_node": "slot_7_1745443261688",
+      "previous_sibling": "node_10_1745443438288"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores",
+      "use_connect_to_support_prompt": "Connect to support",
+      "single_answer_clarification_prompt": "Something else"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "language": "pt-br",
+  "description": "",
+  "name": "Assistente auxiliar de atendimento"
+}

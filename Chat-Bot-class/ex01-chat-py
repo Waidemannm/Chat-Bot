@@ -1,0 +1,27 @@
+vetor = np.array([39,38,27,22,20,17,10,10,10,10,7,7,7,7,6])
+
+def media_aritmetica(vetor):
+  return(sum(vetor)/len(vetor))
+
+print(f'A média aritmética é: {media_aritmetica(vetor)}')
+
+def media_geometrica(vetor):
+  produto = 1
+  for i in vetor:
+    produto *= i
+  return produto** (1/len(vetor))
+
+print(f'A média geométrica é: {media_aritmetica(vetor):.2f}')
+
+def media_harmonica(vetor):
+  inverso_soma = 0
+  for valor in vetor:
+    inverso_soma += 1/valor
+  return len(vetor)/inverso_soma
+
+def media_harmonica2(vetor):
+  return len(vetor)/sum(1/vetor)
+
+print(f'A média harmônica é: {media_harmonica(vetor)}')
+print(f'A média harmônica é: {media_harmonica2(vetor)}')
+print(f'Verificação de Média Arite > Média Geom > Média Harm: {media_aritmetica(vetor) > media_geometrica(vetor) >  media_harmonica(vetor)}')

@@ -1,0 +1,1515 @@
+{
+  "intents": [
+    {
+      "intent": "cadastro",
+      "examples": [
+        {
+          "text": "Cadastro"
+        },
+        {
+          "text": "Como faço cadastro nessa plataforma?"
+        },
+        {
+          "text": "Como fazer cadastro?"
+        },
+        {
+          "text": "Desejo criar um cadastro"
+        },
+        {
+          "text": "Desejo fazer cadastro"
+        },
+        {
+          "text": "Onde faço meu cadastro?"
+        },
+        {
+          "text": "Pode me cadastrar?"
+        },
+        {
+          "text": "Posso me cadastrar?"
+        },
+        {
+          "text": "Quero fazer cadastro"
+        },
+        {
+          "text": "Quero fazer meu registro"
+        },
+        {
+          "text": "Quero me cadastrar"
+        },
+        {
+          "text": "Quero me cadastrar no app"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "oferecer_abrigo_temporario",
+      "examples": [
+        {
+          "text": "Como faço para oferecer lar temporário?"
+        },
+        {
+          "text": "Estou disponível para acolher um pet"
+        },
+        {
+          "text": "Estou disposto a adotar temporariamente"
+        },
+        {
+          "text": "Me disponho a oferecer abrigo"
+        },
+        {
+          "text": "Ofereço abrigo durante o desastre"
+        },
+        {
+          "text": "Posso abrigar um animal por um tempo"
+        },
+        {
+          "text": "Posso receber um gato aqui"
+        },
+        {
+          "text": "Quero ajudar com hospedagem"
+        },
+        {
+          "text": "Quero ajudar oferecendo abrigo"
+        },
+        {
+          "text": "Quero cuidar de um animal resgatado"
+        },
+        {
+          "text": "Tenho espaço para um cachorro"
+        },
+        {
+          "text": "Tenho um lugar seguro para animais"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "receber_notificacoes",
+      "examples": [
+        {
+          "text": "Ativar alertas de animais encontrados"
+        },
+        {
+          "text": "Como configuro as notificações?"
+        },
+        {
+          "text": "Como sou avisado se acharem meu animal?"
+        },
+        {
+          "text": "Desejo alertas por e-mail"
+        },
+        {
+          "text": "Enviem aviso se alguém encontrar um pet"
+        },
+        {
+          "text": "Me avisem de novidades sobre o meu bichinho"
+        },
+        {
+          "text": "Me avise se aparecer um gato parecido"
+        },
+        {
+          "text": "Notificar quando houver coincidência"
+        },
+        {
+          "text": "Quero acompanhar atualizações do sistema"
+        },
+        {
+          "text": "Quero receber mensagens automáticas"
+        },
+        {
+          "text": "Quero receber notificações sobre meu pet"
+        },
+        {
+          "text": "Quero ser notificado se alguém achar meu cachorro"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "reportar_animal_encontrado",
+      "examples": [
+        {
+          "text": "Acabei de resgatar um gato"
+        },
+        {
+          "text": "Achei um cachorro na rua"
+        },
+        {
+          "text": "Como aviso que achei um pet?"
+        },
+        {
+          "text": "Encontrei um gato perto da escola"
+        },
+        {
+          "text": "Onde registro um animal que achei?"
+        },
+        {
+          "text": "Peguei um animal perdido"
+        },
+        {
+          "text": "Posso cadastrar um animal que achei?"
+        },
+        {
+          "text": "Quero reportar um cachorro que encontrei"
+        },
+        {
+          "text": "Tem um cachorro perdido aqui perto"
+        },
+        {
+          "text": "Vi um animal abandonado na enchente"
+        },
+        {
+          "text": "Vi um bichinho perdido no meu bairro"
+        },
+        {
+          "text": "Vi um cachorro perdido durante a chuva"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "_reportar_animal_perdido",
+      "examples": [
+        {
+          "text": "Ajuda! Não encontro meu pet"
+        },
+        {
+          "text": "Como notifico sobre meu animal perdido?"
+        },
+        {
+          "text": "Estou procurando meu cachorro"
+        },
+        {
+          "text": "Meu animal sumiu, como faço para avisar?"
+        },
+        {
+          "text": "Meu bichinho está perdido, o que faço?"
+        },
+        {
+          "text": "Meu cão fugiu durante o alagamento"
+        },
+        {
+          "text": "Onde informo que meu pet sumiu?"
+        },
+        {
+          "text": "Perdi meu cachorro e preciso de ajuda"
+        },
+        {
+          "text": "Posso publicar sobre meu gato desaparecido?"
+        },
+        {
+          "text": "Preciso cadastrar um animal que desapareceu"
+        },
+        {
+          "text": "Preciso relatar o desaparecimento do meu animal"
+        },
+        {
+          "text": "Quero registrar meu gato perdido"
+        },
+        {
+          "text": "_reportar_animal_perdido"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "acao_usuario",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cadastro",
+          "synonyms": [
+            "adicionar",
+            "inserir",
+            "registrar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "consultar",
+          "synonyms": [
+            "acessar",
+            "buscar",
+            "ver"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "notificar",
+          "synonyms": [
+            "alertar",
+            "avisar",
+            "informar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "oferecer",
+          "synonyms": [
+            "disponibilizar",
+            "doar",
+            "fornecer"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "procurar",
+          "synonyms": [
+            "achar",
+            "buscar",
+            "localizar",
+            "tentar"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "cadastro",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "cpf",
+          "patterns": [
+            "44750955531",
+            "^\\d{11}"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "nome",
+          "patterns": [
+            "João Pedro"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "telefone",
+          "patterns": [
+            "11940028922"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "disponibilidade_tempo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "curto prazo",
+          "synonyms": [
+            "alguns dias",
+            "por pouco tempo",
+            "temporário"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "fim de semana",
+          "synonyms": [
+            "domingo",
+            "final de semana",
+            "sábado"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "longo prazo",
+          "synonyms": [
+            "indefinido",
+            "por bastante tempo",
+            "por semanas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "noturno",
+          "synonyms": [
+            "à noite",
+            "depois das 18hrs",
+            "durante a noite"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "urgente",
+          "synonyms": [
+            "agora",
+            "imediata",
+            "já"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "ds_animal",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "cor",
+          "patterns": [
+            "(preto|branco|marrom|cinza|amarelo|dourado|laranja|ruivo|tricolor)"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "especie",
+          "synonyms": [
+            "cachorro",
+            "gato"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "raca cao/gato",
+          "patterns": [
+            "(labrador|pastor alemão|golden|pitbull|siamês|persa|maine coon)"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "estado_animal",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "assustado",
+          "synonyms": [
+            "agitado",
+            "com medo",
+            "nervoso"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "desnutrido",
+          "synonyms": [
+            "fraco",
+            "magro",
+            "sem comida"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ferido",
+          "synonyms": [
+            "com ferimentos",
+            "lesionado",
+            "machucado"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "saudável",
+          "synonyms": [
+            "bem",
+            " inteiro",
+            "sem machucado"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sujo",
+          "synonyms": [
+            "enlamentado",
+            "molhado",
+            "sujinho"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "localizacao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cidade",
+          "synonyms": [
+            "São Paulo"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "estado",
+          "patterns": [
+            "São Paulo"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "rua",
+          "patterns": [
+            "Rua Oscar Freire"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "notificacao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "telefone",
+          "synonyms": [
+            "11940028922"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "opcao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "não",
+          "synonyms": [
+            "nao",
+            "NÃO",
+            "não gostaria",
+            "negativo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "aceito",
+            "gostaria",
+            "SIM"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "pessoas_cadastradas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Abílio",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "João",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Maria",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "telefones_cadastrados",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "11940028922",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tipo_animal",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cachorro",
+          "synonyms": [
+            "cão",
+            "cão perdido",
+            "cãozinho",
+            "dog"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "coelho",
+          "synonyms": [
+            "coelhinho",
+            "lebre"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "gato",
+          "synonyms": [
+            "gatinha",
+            "gatinho",
+            "gato perdido"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "outro",
+          "synonyms": [
+            "animal diferente",
+            "animal exótico",
+            " outros pets"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "pássaro",
+          "synonyms": [
+            "ave",
+            "ave de estimação",
+            "passarinho"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Olá! 👋 Bem-vindo(a) à plataforma de apoio ao resgate de animais perdidos. Posso te ajudar a:",
+            "options": [
+              {
+                "label": "Cadastro",
+                "value": {
+                  "input": {
+                    "text": "cadastro"
+                  }
+                }
+              },
+              {
+                "label": "Reportar animal perdido",
+                "value": {
+                  "input": {
+                    "text": "_reportar_animal_perdido"
+                  }
+                }
+              },
+              {
+                "label": "Receber lembrete",
+                "value": {
+                  "input": {
+                    "text": "receber_notificacoes"
+                  }
+                }
+              },
+              {
+                "label": "Abrigo temporário",
+                "value": {
+                  "input": {
+                    "text": "oferecer_abrigo_temporario"
+                  }
+                }
+              },
+              {
+                "label": "Reportar animal encontrado",
+                "value": {
+                  "input": {
+                    "text": "reportar_animal_encontrado"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_2_1748442047578",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informe a espécie do animal"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_6_1748441467692",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1748441467693",
+      "previous_sibling": "handler_9_1748441467693"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informe a espécie do animal"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_8_1748441960899",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1748441960906",
+      "previous_sibling": "handler_2_1748441960906"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1748441981349",
+      "context": {
+        "ds_animal_cor": "@ds_animal:cor"
+      },
+      "conditions": "@ds_animal:cor",
+      "event_name": "input",
+      "dialog_node": "handler_10_1748441981349"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor, informe seu telefone"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_1_1748442374480",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1748442374480",
+      "previous_sibling": "handler_9_1748442374480"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informe a raça do cão ou gato"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1748441834224",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1748441834224",
+      "previous_sibling": "handler_5_1748441834224"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor informe seu nome para cadastro?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_7_1748439663618",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1748439663625",
+      "previous_sibling": "handler_4_1748439663625"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Me informe seu telefone"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_3_1748439842783",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1748439842784",
+      "previous_sibling": "handler_3_1748439842784"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1748441960899",
+      "context": {
+        "ds_animal_especie": "@ds_animal:especie"
+      },
+      "conditions": "@ds_animal:especie",
+      "event_name": "input",
+      "dialog_node": "handler_2_1748441960906"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informe a raça do cão ou gato"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1748442018300",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1748442018301",
+      "previous_sibling": "handler_4_1748442018301"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informe seu estado"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1748442993582",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1748442993582",
+      "previous_sibling": "handler_9_1748442993582"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1748439842783",
+      "context": {
+        "cadastro_telefone": "@cadastro:telefone"
+      },
+      "conditions": "@cadastro:telefone",
+      "event_name": "input",
+      "dialog_node": "handler_3_1748439842784"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1748439663618",
+      "context": {
+        "cadastro_nome": "@cadastro:nome"
+      },
+      "conditions": "@cadastro:nome",
+      "event_name": "input",
+      "dialog_node": "handler_4_1748439663625"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1748439808791",
+      "context": {
+        "cadastro_cpf": "@cadastro:cpf"
+      },
+      "conditions": "@cadastro:cpf",
+      "event_name": "input",
+      "dialog_node": "handler_4_1748439808791"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1748442018300",
+      "context": {
+        "ds_animal__raca": "@ds_animal:(raca cao/gato)"
+      },
+      "conditions": "@ds_animal:(raca cao/gato)",
+      "event_name": "input",
+      "dialog_node": "handler_4_1748442018301"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor digite seu cpf?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_7_1748439808791",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1748439808791",
+      "previous_sibling": "handler_4_1748439808791"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informe a cor do animal"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1748441507762",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1748441507762",
+      "previous_sibling": "handler_6_1748441507762"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1748441834224",
+      "context": {
+        "ds_animal__raca": "@ds_animal:(raca cao/gato)"
+      },
+      "conditions": "@ds_animal:(raca cao/gato)",
+      "event_name": "input",
+      "dialog_node": "handler_5_1748441834224"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informe sua cidade"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_1_1748442981402",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1748442981403",
+      "previous_sibling": "handler_9_1748442981403"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1748441507762",
+      "context": {
+        "ds_animal_cor": "@ds_animal:cor"
+      },
+      "conditions": "@ds_animal:cor",
+      "event_name": "input",
+      "dialog_node": "handler_6_1748441507762"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informe sua rua"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_5_1748442799478",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1748442799484",
+      "previous_sibling": "handler_9_1748442799484"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_7_1748439663618",
+      "event_name": "filled",
+      "dialog_node": "handler_8_1748439701136",
+      "previous_sibling": "handler_2_1748439663625"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1748441467692",
+      "context": {
+        "ds_animal__especie": "@ds_animal:especie"
+      },
+      "conditions": "@ds_animal:especie",
+      "event_name": "input",
+      "dialog_node": "handler_9_1748441467693"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informe a cor do animal"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1748441981349",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1748441981349",
+      "previous_sibling": "handler_10_1748441981349"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1748442374480",
+      "context": {
+        "notificacao_telefone": "@notificacao:telefone"
+      },
+      "conditions": "@notificacao:telefone",
+      "event_name": "input",
+      "dialog_node": "handler_9_1748442374480"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1748442799478",
+      "context": {
+        "localizacao_rua": "@localizacao:rua"
+      },
+      "conditions": "@localizacao:rua",
+      "event_name": "input",
+      "dialog_node": "handler_9_1748442799484"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1748442981402",
+      "context": {
+        "localizacao_cidade": "@localizacao:cidade"
+      },
+      "conditions": "@localizacao:cidade",
+      "event_name": "input",
+      "dialog_node": "handler_9_1748442981403"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1748442993582",
+      "context": {
+        "localizacao_estado": "@localizacao:estado"
+      },
+      "conditions": "@localizacao:estado",
+      "event_name": "input",
+      "dialog_node": "handler_9_1748442993582"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Enviaremos noticias neste telefone"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#receber_notificacoes",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1748442239655",
+      "previous_sibling": "node_4_1748440212652"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor, informe seu nome"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1748353098666",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "@opcao:sim",
+      "dialog_node": "node_1_1748353240467"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você tem cadastro?"
+              },
+              {
+                "text": "Você possui cadastro?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#cadastro",
+      "dialog_node": "node_2_1748353098666",
+      "previous_sibling": "node_2_1748442787431"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nome Completo: Abílio da Silva Santos"
+              },
+              {
+                "text": "Telefone: 11940028921"
+              },
+              {
+                "text": "CPF: 456.434.432-21"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1748353240467",
+      "conditions": "@pessoas_cadastradas:Abílio",
+      "dialog_node": "node_2_1748353305780",
+      "previous_sibling": "response_7_1748353593147"
+    },
+    {
+      "type": "standard",
+      "parent": "node_9_1748439872085",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1748440212652"
+      },
+      "conditions": "@opcao:não",
+      "dialog_node": "node_2_1748440055047",
+      "previous_sibling": "node_4_1748440040223"
+    },
+    {
+      "type": "standard",
+      "title": "Finalizando",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muito obrigado, volte sempre! "
+              },
+              {
+                "text": "Pronto! Se precisar de mais alguma coisa, é só chamar."
+              },
+              {
+                "text": "Missão cumprida! Se tiver mais perguntas, é só me avisar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1748442047578",
+      "previous_sibling": "node_9_1748958601536"
+    },
+    {
+      "type": "frame",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1748442047578"
+      },
+      "conditions": "#oferecer_abrigo_temporario",
+      "dialog_node": "node_2_1748442787431",
+      "previous_sibling": "node_10_1748442239655"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você gostaria de reportar um animal perdido?"
+              },
+              {
+                "text": "Gostaria de reportar um animal perdido?"
+              },
+              {
+                "text": "Perdeu um animal e gostaria de reportar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#_reportar_animal_perdido",
+      "dialog_node": "node_3_1748441892890",
+      "previous_sibling": "node_9_1748439872085"
+    },
+    {
+      "type": "frame",
+      "parent": "node_9_1748439872085",
+      "conditions": "@opcao:sim",
+      "dialog_node": "node_4_1748440040223"
+    },
+    {
+      "type": "standard",
+      "title": "Menu",
+      "output": {
+        "generic": [
+          {
+            "title": "Selecione a opção desejada:",
+            "options": [
+              {
+                "label": "Cadastro",
+                "value": {
+                  "input": {
+                    "text": "cadastro"
+                  }
+                }
+              },
+              {
+                "label": "Reportar animal encontrado",
+                "value": {
+                  "input": {
+                    "text": "reportar_animal_encontrado"
+                  }
+                }
+              },
+              {
+                "label": "Reportar animal perdido",
+                "value": {
+                  "input": {
+                    "text": "_reportar_animal_perdido"
+                  }
+                }
+              },
+              {
+                "label": "Receber lembrete",
+                "value": {
+                  "input": {
+                    "text": "receber_notificacoes"
+                  }
+                }
+              },
+              {
+                "label": " Abrigo temporário",
+                "value": {
+                  "input": {
+                    "text": "oferecer_abrigo_temporario"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "dialog_node": "node_4_1748440212652",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "frame",
+      "parent": "node_3_1748441892890",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1748442047578"
+      },
+      "conditions": "@opcao:sim",
+      "dialog_node": "node_5_1748441927884"
+    },
+    {
+      "type": "standard",
+      "parent": "node_5_1748441927884",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1748440212652"
+      },
+      "conditions": "@opcao:não",
+      "dialog_node": "node_6_1748441935512",
+      "previous_sibling": "slot_10_1748442018300"
+    },
+    {
+      "type": "frame",
+      "parent": "node_2_1748353098666",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1748958601536"
+      },
+      "conditions": "@opcao:não",
+      "dialog_node": "node_7_1748439655166",
+      "previous_sibling": "node_1_1748353240467"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você gostaria de reportar um animal encontrado?"
+              },
+              {
+                "text": "Gostaria de reportar um animal encontrado?"
+              },
+              {
+                "text": "Encontrou um animal e gostaria de reportar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#reportar_animal_encontrado",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1748439872085",
+      "previous_sibling": "node_2_1748353098666"
+    },
+    {
+      "type": "standard",
+      "title": "cadastro_concluido",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Cadastro concluído com sucesso."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1748958601536",
+      "previous_sibling": "node_3_1748441892890"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor, informe seu nome"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1748353240467",
+      "disabled": true,
+      "dialog_node": "response_7_1748353593147"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1748440040223",
+      "variable": "$ds_animal_cor",
+      "dialog_node": "slot_10_1748441507762",
+      "previous_sibling": "slot_6_1748441467692"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1748440040223",
+      "variable": "$ds_animal__raca",
+      "dialog_node": "slot_10_1748441834224",
+      "previous_sibling": "slot_10_1748441507762"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1748441927884",
+      "variable": "$ds_animal_cor",
+      "dialog_node": "slot_10_1748441981349",
+      "previous_sibling": "slot_8_1748441960899"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1748441927884",
+      "variable": "$ds_animal__raca",
+      "dialog_node": "slot_10_1748442018300",
+      "previous_sibling": "slot_10_1748441981349"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1748442787431",
+      "variable": "$localizacao_estado",
+      "dialog_node": "slot_10_1748442993582",
+      "previous_sibling": "slot_1_1748442981402"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1748442239655",
+      "variable": "$notificacao_telefone",
+      "dialog_node": "slot_1_1748442374480"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1748442787431",
+      "variable": "$localizacao_cidade",
+      "dialog_node": "slot_1_1748442981402",
+      "previous_sibling": "slot_5_1748442799478"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1748439655166",
+      "variable": "$cadastro_telefone",
+      "dialog_node": "slot_3_1748439842783",
+      "previous_sibling": "slot_7_1748439808791"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1748442787431",
+      "variable": "$localizacao_rua",
+      "dialog_node": "slot_5_1748442799478"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1748440040223",
+      "variable": "$ds_animal__especie",
+      "dialog_node": "slot_6_1748441467692"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_7_1748439655166",
+      "variable": "$cadastro_nome",
+      "dialog_node": "slot_7_1748439663618"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1748439655166",
+      "variable": "$cadastro_cpf",
+      "dialog_node": "slot_7_1748439808791",
+      "previous_sibling": "slot_7_1748439663618"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1748441927884",
+      "variable": "$ds_animal_especie",
+      "dialog_node": "slot_8_1748441960899"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores",
+      "use_connect_to_support_prompt": "Connect to support",
+      "single_answer_clarification_prompt": "Something else"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "language": "pt-br",
+  "description": "",
+  "name": "GS-PetSOS-dialog"
+}

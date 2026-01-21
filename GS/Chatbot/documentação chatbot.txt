@@ -1,0 +1,18 @@
+Moisés Waidemann, Gabriel Sbrana, Thiago Mota.
+
+Credenciais usadas:
+
+WATSON API KEY: y730iQPCIq-qUzakM73ybUjlKaSlbV3EscKK5-jkz1pi
+WATSON SERVICE ENDPOINT: https://api.us-south.assistant.watson.cloud.ibm.com/instances/fb229c84-9a88-45b3-97e0-2f0cc6b6f50c
+WATSON ASSISTANT ID: c256df9e-01f7-4ce1-b876-867b429a9cd0
+
+
+STT API KEY: hBaq9ql516KTLHyoLa4lmM8nw4nHMDWw51rPAUETgK18
+STT URL: https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/7960538b-6485-4979-8cdd-6aa5848f80ef
+
+
+TTS API KEY: 0cOkRU6Eovbrt2Tw6mAT3_0Ph0matfRJemeqi04j0a1C
+TTS URL: https://api.us-south.text-to-speech.watson.cloud.ibm.com/instances/c067c941-ab82-4725-857e-db5e1cfc1e06
+
+Telegram: 8009980526:AAFUjY_t1ShIPPal_OOcgNvgFSxohBHDWGI
+Youtube: https://youtu.be/h7KOOBJy0VY

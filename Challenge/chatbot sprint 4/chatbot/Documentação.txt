@@ -1,0 +1,9 @@
+Gabriel Sbrana Campos, RM: 565849 - 1TDSPH
+Moisés Waidemann Molinillo Júnior, RM: 563719 - 1TDSPH
+Thiago Rodrigues da Mota, RM: 563650 - 1TDSPH
+
+O projeto teve como objetivo desenvolver um modelo de inteligência artificial capaz de identificar possíveis causas de dificuldades no agendamento de consultas médicas on-line. Os dados foram coletados por meio de um formulário do Google Forms, contendo perguntas sobre idade, canais de agendamento utilizados, dificuldades encontradas e preferências de atendimento.
+
+Após a coleta, os dados foram tratados e transformados em formato numérico por meio do uso do LabelEncoder. Em seguida, foi utilizado o algoritmo Random Forest para realizar a classificação e prever se o usuário apresentou ou não problemas de agendamento. Também foi aplicado o método de agrupamento K-Means para identificar padrões e perfis semelhantes entre os respondentes.
+
+O modelo foi avaliado com base em métricas de acurácia e relatório de classificação, demonstrando bom desempenho. Por fim, o modelo treinado foi integrado a uma API desenvolvida com Flask, permitindo que novas previsões sejam realizadas de forma automatizada e possam futuramente ser utilizadas em um chatbot de suporte ao agendamento médico.
